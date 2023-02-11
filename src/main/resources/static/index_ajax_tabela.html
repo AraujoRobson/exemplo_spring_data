@@ -19,7 +19,7 @@
 				let filtroForm = document.getElementById('filtro');
 				
 				filtroForm.addEventListener('input', (filtro) => {
-	                $.ajax({ 
+	        $.ajax({ 
 						type : 'GET', 
 						url : '/api/livros/find?filtro=' + filtroForm.value,
 						data : '$format=json', 
